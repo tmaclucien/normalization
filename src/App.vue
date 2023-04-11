@@ -1,5 +1,13 @@
+<!-- @format -->
+
 <script setup lang="ts">
-import HelloWorld from "./components/HelloWorld.vue";
+import HelloWorld from './components/HelloWorld.vue' // prettier-error: singleQuate
+
+const a = (e: any) => {
+  console.log(e) // prettier-error: semi
+} // eslint-error : no-unused-error
+
+const b = 1 // eslint-error: prefer const
 </script>
 
 <template>
@@ -7,6 +15,7 @@ import HelloWorld from "./components/HelloWorld.vue";
     <a href="https://vitejs.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
+    <!-- prettier-error: tabWidth -->
     <a href="https://vuejs.org/" target="_blank">
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
@@ -16,7 +25,6 @@ import HelloWorld from "./components/HelloWorld.vue";
 
 <style scoped>
 .logo {
-  height: 6em;
   padding: 1.5em;
   will-change: filter;
   transition: filter 300ms;
