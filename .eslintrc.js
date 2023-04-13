@@ -39,7 +39,6 @@ module.exports = {
     'no-shadow': 'off', // 禁止变量声明与外层作用域的变量同名
     'no-unused-vars': 'warn', // 禁止出现未使用过的变量
     'import/no-cycle': 'off', // 禁止一个模块导入一个有依赖路径的模块回到自己身上
-    // semi: ['error', 'never'], // 要求或禁止使用分号代替 ASI(Automatical Semicolon Insertion)
     eqeqeq: 'off', // 要求使用 === 和 !==
     'no-param-reassign': 'off', // 禁止对 function 的参数进行重新赋值
     'import/prefer-default-export': 'off', // 如果模块只输入一个名字，则倾向于默认输出
@@ -72,7 +71,7 @@ module.exports = {
     '@typescript-eslint/no-explicit-any': 'off', // 禁止使用 any 类型
     'guard-for-in': 'off', // 要求 for-in 循环中有一个 if 语句
     'class-methods-use-this': 'off', // 强制类方法使用 this
-    'vue/html-indent': ['error', 2], // 在<template>中强制一致缩进
+    // 'vue/html-indent': ['error', 2], // 在<template>中强制一致缩进
     'vue/html-self-closing': 'off', // 执行自闭合的风格
     'prefer-promise-reject-errors': ['off'],
     'vue/singleline-html-element-content-newline': 'off', // 要求单行元素的内容前后有一个换行符

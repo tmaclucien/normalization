@@ -1,13 +1,13 @@
 <!-- @format -->
 
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue' // prettier-error: singleQuate
+import HelloWorld from './components/HelloWorld.vue' // prettier-error: doubleQuoate -> singleQuate
 
 const a = (e: any) => {
-  console.log(e) // prettier-error: semi
-} // eslint-error : no-unused-error
+  console.log(e) // prettier-error: semi(false) && eslint-warning: no-console
+} // eslint-warning : no-unused-vars
 
-const b = 1 // eslint-error: prefer const
+const b = 1 // eslint-error: prefer const && eslint-warning: no-unused-vars
 </script>
 
 <template>
@@ -24,6 +24,7 @@ const b = 1 // eslint-error: prefer const
 </template>
 
 <style scoped>
+/* <!-- prettier-error: tabWidth --> */
 .logo {
   padding: 1.5em;
   will-change: filter;
