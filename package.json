@@ -4,7 +4,8 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build"
+    "build": "vue-tsc && vite build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "vue": "^3.2.47"
