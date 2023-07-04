@@ -4,8 +4,7 @@
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "prepare": "husky install"
+    "build": "vue-tsc && vite build"
   },
   "dependencies": {
     "vue": "^3.2.47"
@@ -15,9 +14,7 @@
     "@typescript-eslint/eslint-plugin": "^5.57.1",
     "@typescript-eslint/parser": "^5.57.1",
     "@vitejs/plugin-vue": "^4.1.0",
-    "commitizen": "^4.3.0",
     "commitlint": "^17.5.1",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.38.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^8.8.0",
