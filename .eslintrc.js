@@ -27,7 +27,7 @@ module.exports = {
     // this turns on the rule provided by prettier, which runs  within ESLint:换句话说就是注入prettier规则，如果书写规则违背prettier，则会报错
     'prettier/prettier': ['error'],
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 禁用 debugger
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off', // 禁用 console
+    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'error', // 禁用 console
     'no-bitwise': 'off', // 禁用按位运算符
     'array-element-newline': ['error', 'consistent'], // 强制数组元素间出现换行
     'comma-dangle': ['error', 'only-multiline'], // 要求或禁止末尾逗号
@@ -37,7 +37,7 @@ module.exports = {
     'import/extensions': 'off', // 确保在导入路径中统一使用文件扩展名
     'eol-last': 'off', // 要求或禁止文件末尾存在空行
     'no-shadow': 'off', // 禁止变量声明与外层作用域的变量同名
-    'no-unused-vars': 'warn', // 禁止出现未使用过的变量
+    'no-unused-vars': 'error', // 禁止出现未使用过的变量
     'import/no-cycle': 'off', // 禁止一个模块导入一个有依赖路径的模块回到自己身上
     eqeqeq: 'off', // 要求使用 === 和 !==
     'no-param-reassign': 'off', // 禁止对 function 的参数进行重新赋值
