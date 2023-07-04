@@ -3,6 +3,11 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 
+const a = (x: number, y: number) => x + y
+
+const b = 1
+
+a(2, b)
 </script>
 
 <template>
