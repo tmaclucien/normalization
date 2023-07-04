@@ -11,7 +11,7 @@
 3. 作用：项目安装完依赖（npm install），自动执行 prepare 脚本，初始化 husky
 4. 添加钩子脚本：
    （1）pre-commit：npx husky add .husky/pre-commit 'npx lint-staged'
-   (2) commit-msg：npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'
+    (2) commit-msg：npx husky add .husky/commit-msg 'npx --no-install commitlint --edit $1'
 
 ## lint-staged
 
